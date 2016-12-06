@@ -1,4 +1,17 @@
-<h1>Weather#home</h1>
-<p>Find me in app/views/weather/home.html.erb</p>
 
-<%= @res %>
+
+<div class="container">
+<h1><%= @temperature %> C </h1><br>
+<%# @sky %> 
+<img id ="sky_image" src = <%= @sky_image %>>
+<br>
+
+<div onclick="getLocation()">click test</div>
+
+<a class="waves-effect waves-light btn-large" onclick="geoFindMe()"><i class="material-icons left">Show my location</i>button</a>
+<!--<p><button onclick="geoFindMe()">Show my location</button></p>-->
+<div id="out"></div>
+<!--서버 -->
+<!--rails server -b $IP -p $PORT-->
+
+</div>
